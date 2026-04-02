@@ -18,7 +18,8 @@ cask "oz" do
   binary "oz"
 
   postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/oz"]
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/oz"]
+    end
   end
 end
