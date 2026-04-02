@@ -16,4 +16,9 @@ cask "oz" do
   homepage "https://github.com/svyatov/oz"
 
   binary "oz"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/oz"]
+  end
 end
