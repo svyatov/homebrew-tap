@@ -6,25 +6,25 @@ cask "handrail" do
     end
   end
 
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     on_arm do
-      sha256 "ddd7e81910efec5d7c9ed0c5db74689def13b16000a3d77347ecc1536c946cd5"
+      sha256 "ef10481265be9e5a8a3f3fecb5e3a04e2af786b9da62714c9625b90ad765d085"
       url "https://github.com/svyatov/handrail/releases/download/v#{version}/handrail_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "da2a0a98cc1cd8a603a7e9b1bde5f52234e7e2309fe8845eaffcda34180750ac"
+      sha256 "ebd9fa55be5ac620a258887157174a134ff3a4669492fa24f39ca9eb49e6a1cc"
       url "https://github.com/svyatov/handrail/releases/download/v#{version}/handrail_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "63903f3a242d45d4d8dc836bca5b63b7d0b3708e621f7b5155709cfd2664b161"
+      sha256 "45e4fef9986883431fde9986802b272871cde53dddbbd29f5f5dddb925a26ff0"
       url "https://github.com/svyatov/handrail/releases/download/v#{version}/handrail_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "86fc658c2f0f6101dd1db4b360a074a90f97f3f07827a771f463a1b72291cb6b"
+      sha256 "7224421b0b07001dfd15f8fbe412b509eefb03822f0bf834329d44de6e456318"
       url "https://github.com/svyatov/handrail/releases/download/v#{version}/handrail_#{version}_linux_amd64.tar.gz"
     end
   end
