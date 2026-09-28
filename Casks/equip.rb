@@ -6,25 +6,25 @@ cask "equip" do
     end
   end
 
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_arm do
-      sha256 "61f59efc96e0806dae2911d68c561cfd3f9210e96551aa7a774fdc53c4441fa6"
+      sha256 "7e1b6a4a89137a72528dd1291bf23663ef3435cdcb40bd576b2afeb68187281b"
       url "https://github.com/svyatov/equip/releases/download/v#{version}/equip_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3d7d9635fd5cc2aaf92abcbc59c0edfdd7afb815842f84752b2952dbf086a7c6"
+      sha256 "241e9e2d166a581977994b869f0ff4fcc964ba932820051785d05c50ef0e8a30"
       url "https://github.com/svyatov/equip/releases/download/v#{version}/equip_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "39c1d6dd89bc55184a307ce4dca71c9caffa90cfd9408e67ad1b3f4764eb6180"
+      sha256 "d8f9a44f935ccbb9afb808dc77147688ab127f8da65f1c30876325f8277f956c"
       url "https://github.com/svyatov/equip/releases/download/v#{version}/equip_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3ade693571eabe0be7ea23b4b071bb2a58effec832101440536ee78dba68b9df"
+      sha256 "e8ad41900abf46c06970c457631dd348f837ba9ce51865408e1f1ffeeead339e"
       url "https://github.com/svyatov/equip/releases/download/v#{version}/equip_#{version}_linux_amd64.tar.gz"
     end
   end
